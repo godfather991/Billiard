@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - whiteball
+  - redball
+  - blueball
+  - yellowball
+  - oringeball
+  - redt
+  - bluet
+  - yellowt
+  - oringet
   layers:
   - Default
   - TransparentFX
