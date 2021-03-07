@@ -21,7 +21,7 @@ public class Button : MonoBehaviour
     public void OnClick()
     {
         if (lefttime == 0) return;
-        this.gameObject.GetComponent<Button>().enabled = false;
+        this.gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
         StartCoroutine(Countdowm());
         lefttime--;
         leftview.GetComponent<Text>().text = System.Convert.ToString(lefttime);
@@ -31,7 +31,7 @@ public class Button : MonoBehaviour
     IEnumerator Countdowm()
     {
         yield return new WaitForSeconds(3.0f);
-        this.gameObject.GetComponent<Button>().enabled = true;
+        this.gameObject.GetComponent<UnityEngine.UI.Button>().enabled = true;
         if (lefttime == 0)
         {
             if (GameObject.FindGameObjectsWithTag("redball").Length == 0 && GameObject.FindGameObjectsWithTag("blueball").Length == 0 && GameObject.FindGameObjectsWithTag("yellowball").Length == 0 && GameObject.FindGameObjectsWithTag("oringeball").Length == 0) leftview.GetComponent<Text>().text = "You Win!";
